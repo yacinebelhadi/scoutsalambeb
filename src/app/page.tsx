@@ -123,7 +123,7 @@ export default function Home() {
   return (
     <main className="container px-2 mx-auto py-10 rtl">
       <div className="max-w-2xl mx-auto">
-        <h1 className="text-2xl font-bold mb-6 text-right">نموذج البيانات</h1>
+        <h1 className="text-2xl font-bold mb-6 text-right"> انشاء البطاقة الفنية نموذج</h1>
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6 text-right">
             <FormField
