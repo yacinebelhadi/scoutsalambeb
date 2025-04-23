@@ -99,12 +99,12 @@ const PDFLayout = ({ data }: any) => {
   return (<Document>
     <Page size="A4" style={styles.page}>
       {/* header */}
-      <Image style={{ width: "100%", height: 100, position: "absolute", top: 0, right: 0, objectFit: "container" }} src="/header.jpg" />
+      <Image style={{ width: "100%", height: 100, position: "absolute", top: 12, right: 0, objectFit: "container" }} src="/header.jpg" />
 
-      <View style={{ width: "100%", marginVertical: 100, display: "flex", flexDirection: "row", justifyContent: "space-around", alignItems: "center", marginBottom: 10, paddingHorizontal: 35 }}>
+      <View style={{ width: "100%", marginVertical: 110, display: "flex", flexDirection: "row", justifyContent: "space-around", alignItems: "center", marginBottom: 10, paddingHorizontal: 35 }}>
         <View style={{}}>
           <View style={{ display: "flex", flexDirection: "row", justifyContent: "flex-end", alignItems: "center" }}>
-            <Text style={{ fontFamily: "LateefFont", fontSize: 12 }}>{data.time} :</Text>
+            <Text style={{ fontFamily: "LateefFont", fontSize: 12 }}>{data.date} :</Text>
             <Text style={{ fontFamily: "LateefFont", fontSize: 12 }}>برج البحري في</Text>
           </View>
         </View>
@@ -130,7 +130,7 @@ const PDFLayout = ({ data }: any) => {
         </View>
 
         <View style={{ width: "100%", marginVertical: 2, paddingHorizontal: 35, display: "flex", flexDirection: "row", gap: 3, justifyContent: "flex-end", alignItems: "center", }}>
-          <Text style={{ fontFamily: "LateefFont", fontSize: 12 }}>{data.date} :</Text>
+          <Text style={{ fontFamily: "LateefFont", fontSize: 12 }}>{data.time} :</Text>
           <Text style={{ fontFamily: "LateefFont", fontSize: 12, fontWeight: "bold" }}>الزمـان</Text>
         </View>
 
@@ -209,7 +209,7 @@ const PDFLayout = ({ data }: any) => {
         </View>
       </View>
       {/* @ts-ignore */}
-      <Image style={{ width: "100%", height: 120, position: "absolute", bottom: 0, right: 0, objectFit: "container" }} src="/footer.jpg" />
+      <Image style={{ width: "100%", height: 120, position: "absolute", bottom: 15, right: 0, objectFit: "container" }} src="/footer.jpg" />
     </Page>
   </Document>
   )
